@@ -1,0 +1,147 @@
+/* Reset cơ bản */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header tổng */
+  #header {
+    width: 100%;
+  }
+  
+  /* --- PHẦN TRÊN CÙNG --- */
+  .header-top {
+    background: #f8f8f8;
+    font-size: 14px;
+    border-bottom: 1px solid #e7e7e7;
+    padding: 8px 0;
+  }
+  
+  .container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .top-menu,
+  .top-details {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .top-menu li a,
+  .top-details li a {
+    color: #666;
+    text-decoration: none;
+  }
+  
+  .top-menu li a i,
+  .top-details li a i {
+    margin-right: 5px;
+  }
+  
+  /* --- PHẦN GIỮA (logo + tìm kiếm + giỏ hàng) --- */
+  .header-body {
+    background: white;
+    padding: 20px 0;
+  }
+  
+  #logo img {
+    max-width: 200px;
+  }
+  
+  .beta-components {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  #searchform {
+    display: flex;
+    align-items: center;
+  }
+  
+  #s {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    height: 36px;
+  }
+  
+  #searchsubmit {
+    height: 36px;
+    width: 40px;
+    border: none;
+    background: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    border-left: none;
+    cursor: pointer;
+  }
+  
+  .beta-select {
+    cursor: pointer;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* --- PHẦN MENU NAVIGATION --- */
+  .header-bottom {
+    background-color: #0277b8;
+  }
+  
+  .main-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  
+  .main-menu ul li {
+    position: relative;
+    /* margin: 0 15px; */
+  }
+  
+  .main-menu ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    font-size: 16px;
+  }
+  
+  .main-menu ul li:hover > .sub-menu {
+    display: block;
+  }
+  
+  /* Sub-menu */
+  .sub-menu {
+    display: none;
+    position: absolute;
+    background: white;
+    top: 35px;
+    left: 0;
+    min-width: 150px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 10;
+  }
+  
+  .sub-menu li a {
+    color: #333;
+    padding: 10px;
+    display: block;
+  }
+  
+  .sub-menu li a:hover {
+    background-color: #f2f2f2;
+  }
+  
+  .register{
+    margin-left: 550px;
+  }
