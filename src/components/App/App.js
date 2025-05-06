@@ -9,14 +9,15 @@ import State from '../State';
 import Counter from '../Counter';
 import DienTichHCN from '../DienTichHCN';
 import DienTichHCNClass from '../DienTichHCNClass';
+import Form from '../../Form';
+
 
 
 
 function App() {
   return (
     <div className="App">
-      <DienTichHCN/>
-      <DienTichHCNClass/>
+      <Form/>
     </div>
   );
 }
